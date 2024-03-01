@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static("public"))
 
 
-import userRouter from "./src/routes/user.route.js";
+import userRouter from "./routes/user.route.js";
 
 app.use("/users", userRouter);
 
